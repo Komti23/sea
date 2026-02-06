@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sea of Tunes: Cursed Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-base"></div>
+<div class="fog-layer fog-1"></div>
+<div class="fog-layer fog-2"></div>
+<canvas id="particle-canvas"></canvas>
+
+<div class="artifact-container">
+    <div class="rune-ring">
+        <svg viewBox="0 0 500 500">
+            <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" fill="transparent"/>
+            <text width="500">
+                <textPath xlink:href="#curve" class="rune-text">
+                    ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛈ ᛇ ᛉ ᛊ
+                </textPath>
+            </text>
+        </svg>
+    </div>
+    <div class="glow-pulse"></div>
+    <img src="https://i.imgur.com/Y6XK6bE.png" alt="Cursed Skull" class="skull-img">
+</div>
+
+<canvas id="eq"></canvas>
+
+<div class="player glass">
+    <div class="track-info">
+        <h2 id="track-name">Cursed Shanties</h2>
+        <p>Sea of Thieves</p>
+    </div>
+
+    <div class="controls-row">
+        <button id="prev" class="control-btn">⏮</button>
+        <button id="play" class="control-btn play-btn">▶</button>
+        <button id="next" class="control-btn">⏭</button>
+    </div>
+
+    <div class="timeline-container">
+        <span id="current-time">0:00</span>
+        <div class="timeline">
+            <div class="progress"></div>
+            <div class="progress-head"></div>
+        </div>
+        <span id="duration">0:00</span>
+    </div>
+
+    <div class="volume-container">
+        <span>🔊</span>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.7">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
