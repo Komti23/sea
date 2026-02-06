@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Sea of Tunes: Cursed Player</title>
+    <title>Sea of Thieves: Swamp Edition</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Pirata+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="background-base"></div>
-<div class="fog-layer fog-1"></div>
-<div class="fog-layer fog-2"></div>
+<div id="dynamic-bg-container">
+    <div class="deep-swamp-base"></div>
+
+    <div class="fog-layer fog-deep"></div>
+    <div class="fog-layer fog-mid"></div>
+    <div class="fog-layer fog-light"></div>
+</div>
+
 <canvas id="particle-canvas"></canvas>
 
-<div class="artifact-container">
+<div class="artifact-container" id="artifact">
     <div class="rune-ring">
         <svg viewBox="0 0 500 500">
             <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" fill="transparent"/>
@@ -24,16 +29,15 @@
             </text>
         </svg>
     </div>
-    <div class="glow-pulse"></div>
-    <img src="https://i.imgur.com/Y6XK6bE.png" alt="Cursed Skull" class="skull-img">
+    <div class="core-glow" id="core-glow"></div>
 </div>
 
 <canvas id="eq"></canvas>
 
-<div class="player glass">
+<div class="player glass" id="player-ui">
     <div class="track-info">
-        <h2 id="track-name">Cursed Shanties</h2>
-        <p>Sea of Thieves</p>
+        <h2 id="track-name">Sea of Thieves</h2>
+        <p>Atmospheric Player</p>
     </div>
 
     <div class="controls-row">
