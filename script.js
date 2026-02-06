@@ -1,8 +1,9 @@
 /* --- ТРЕКИ --- */
 const tracks = [
     // Замените на свои реальные пути к файлам
-    { url: "music/1.mp3", title: "Maiden Voyage", artist: "Sea of Thieves" },
-    { url: "music/2.mp3", title: "Grogg Mayles", artist: "Sea of Thieves" }
+    { url: "music/01 - We Shall Sail Together.mp3", title: "We Shall Sail Together", artist: "Sea of Thieves" },
+    { url: "music/02 - Maiden Voyage.mp3", title: "Maiden Voyage", artist: "Sea of Thieves" },
+    { url: "music/10 - Gold Hoarder.mp3", title: "Gold Hoarder", artist: "Sea of Thieves" }
 ];
 
 let currentIdx = 0;
